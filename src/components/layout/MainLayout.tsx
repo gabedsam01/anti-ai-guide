@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
+import { SearchModal } from '@/components/SearchModal';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export function MainLayout() {
@@ -14,6 +15,7 @@ export function MainLayout() {
     return false;
   });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     if (isDark) {
@@ -25,7 +27,22 @@ export function MainLayout() {
     }
   }, [isDark]);
 
+  // Cmd+K shortcut
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   const toggleTheme = () => setIsDark(prev => !prev);
+  const openSearch = useCallback(() => setSearchOpen(true), []);
+  const closeSearch = useCallback(() => setSearchOpen(false), []);
 
   return (
     <div className="flex min-h-screen w-full bg-background noise-texture">
@@ -38,6 +55,7 @@ export function MainLayout() {
           isDark={isDark}
           toggleTheme={toggleTheme}
           onMenuClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onSearchClick={openSearch}
         />
 
         <main className="flex-1 p-6 lg:p-10">
@@ -50,6 +68,12 @@ export function MainLayout() {
           {language === 'pt' ? 'Feito com ❤️ pela comunidade Lovable' : 'Made with ❤️ by the Lovable community'}
         </footer>
       </div>
+
+      <SearchModal 
+        isOpen={searchOpen} 
+        onClose={closeSearch} 
+        language={language} 
+      />
     </div>
   );
 }
