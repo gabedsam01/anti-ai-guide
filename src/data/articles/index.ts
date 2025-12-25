@@ -2,12 +2,20 @@ import { Article, CategorySlug } from '../types';
 import { manifestoArticles } from './manifesto';
 import { uiFoundationsArticles } from './ui-foundations';
 import { uxFoundationsArticles } from './ux-foundations';
+import { methodologiesArticles } from './methodologies';
+import { trends2025Articles } from './trends-2025';
+import { ethicsAccessibilityArticles } from './ethics-accessibility';
+import { caseStudiesArticles } from './case-studies';
 
 // Combine all articles
 export const allArticles: Article[] = [
   ...manifestoArticles,
   ...uiFoundationsArticles,
   ...uxFoundationsArticles,
+  ...methodologiesArticles,
+  ...trends2025Articles,
+  ...ethicsAccessibilityArticles,
+  ...caseStudiesArticles,
 ];
 
 // Get articles by category
@@ -61,4 +69,12 @@ export const searchArticles = (query: string, lang: 'pt' | 'en'): Article[] => {
 };
 
 // Export individual article arrays
-export { manifestoArticles, uiFoundationsArticles, uxFoundationsArticles };
+export { 
+  manifestoArticles, 
+  uiFoundationsArticles, 
+  uxFoundationsArticles,
+  methodologiesArticles,
+  trends2025Articles,
+  ethicsAccessibilityArticles,
+  caseStudiesArticles
+};
