@@ -5,6 +5,7 @@ import { getCategoryById } from '@/data/categories';
 import { DocViewer } from '@/components/DocViewer';
 import { TableOfContents } from '@/components/TableOfContents';
 import { ReadingProgress } from '@/components/ReadingProgress';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Language } from '@/data/types';
 
@@ -31,6 +32,11 @@ export default function DocPage() {
 
   return (
     <>
+      <SEOHead 
+        title={article.title[language]} 
+        description={article.description[language]} 
+        path={`/docs/${article.category}/${article.slug}`}
+      />
       <ReadingProgress />
       
       <div className="flex gap-8 animate-fade-in">

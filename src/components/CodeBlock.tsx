@@ -52,9 +52,9 @@ export function CodeBlock({ code, language = 'typescript' }: CodeBlockProps) {
       </button>
 
       {/* Code */}
-      <pre className="bg-card border border-border p-4 pt-10 overflow-x-auto font-body text-sm leading-relaxed">
+      <pre className="bg-card border border-border p-3 sm:p-4 pt-10 overflow-x-auto font-body text-xs sm:text-sm leading-relaxed max-w-full">
         <code
-          className={`language-${language}`}
+          className={`language-${language} break-words`}
           dangerouslySetInnerHTML={{ __html: highlighted }}
         />
       </pre>

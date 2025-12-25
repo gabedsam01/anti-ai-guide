@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
+import { MobileSidebar } from './MobileSidebar';
 import { Header } from './Header';
 import { SearchModal } from '@/components/SearchModal';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -47,6 +48,11 @@ export function MainLayout() {
   return (
     <div className="flex min-h-screen w-full bg-background noise-texture">
       <Sidebar language={language} />
+      <MobileSidebar 
+        language={language} 
+        isOpen={mobileMenuOpen} 
+        onClose={() => setMobileMenuOpen(false)} 
+      />
 
       <div className="flex-1 flex flex-col min-w-0">
         <Header
@@ -58,7 +64,7 @@ export function MainLayout() {
           onSearchClick={openSearch}
         />
 
-        <main className="flex-1 p-6 lg:p-10">
+        <main className="flex-1 p-4 lg:p-10">
           <div className="max-w-4xl mx-auto">
             <Outlet context={{ language }} />
           </div>
