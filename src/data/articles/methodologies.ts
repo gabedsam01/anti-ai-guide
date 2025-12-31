@@ -3,7 +3,7 @@ import { Article } from '../types';
 export const methodologiesArticles: Article[] = [
   {
     id: 'design-systems',
-    slug: 'methodologies/design-systems',
+    slug: 'design-systems',
     category: 'methodologies',
     order: 1,
     readingTime: 12,
@@ -203,7 +203,7 @@ A Design System only works if it's **alive**:
   },
   {
     id: 'atomic-design',
-    slug: 'methodologies/atomic-design',
+    slug: 'atomic-design',
     category: 'methodologies',
     order: 2,
     readingTime: 10,
@@ -221,6 +221,20 @@ A Design System only works if it's **alive**:
 Criado por Brad Frost, o Atomic Design é uma metodologia que organiza componentes de UI em uma **hierarquia inspirada na química**.
 
 ## Os Cinco Níveis
+
+\`\`\`mermaid
+graph LR
+    A[Átomos] --> B[Moléculas]
+    B --> C[Organismos]
+    C --> D[Templates]
+    D --> E[Páginas]
+    
+    style A stroke:#333,stroke-width:1px
+    style B stroke:#666,stroke-width:2px
+    style C stroke:#999,stroke-width:3px
+    style D stroke:#ccc,stroke-width:4px
+    style E stroke:#fff,stroke-width:5px
+\`\`\`
 
 ### 1. Átomos
 
@@ -327,6 +341,20 @@ Created by Brad Frost, Atomic Design is a methodology that organizes UI componen
 
 ## The Five Levels
 
+\`\`\`mermaid
+graph LR
+    A[Atoms] --> B[Molecules]
+    B --> C[Organisms]
+    C --> D[Templates]
+    D --> E[Pages]
+    
+    style A stroke:#333,stroke-width:1px
+    style B stroke:#666,stroke-width:2px
+    style C stroke:#999,stroke-width:3px
+    style D stroke:#ccc,stroke-width:4px
+    style E stroke:#fff,stroke-width:5px
+\`\`\`
+
 ### 1. Atoms
 
 The most basic building blocks — pure HTML elements:
@@ -429,7 +457,7 @@ AI's temptation is to generate overly generic components. Counterbalance:
   },
   {
     id: 'design-thinking',
-    slug: 'methodologies/design-thinking',
+    slug: 'design-thinking',
     category: 'methodologies',
     order: 3,
     readingTime: 9,
@@ -613,7 +641,7 @@ Use AI when:
   },
   {
     id: 'lean-ux',
-    slug: 'methodologies/lean-ux',
+    slug: 'lean-ux',
     category: 'methodologies',
     order: 4,
     readingTime: 8,
@@ -636,9 +664,16 @@ Lean UX adapta os princípios do Lean Startup para o design de experiências, fo
 
 O loop contínuo que guia tudo:
 
-\`\`\`
-HIPÓTESE → EXPERIMENTO → DADOS → APRENDIZADO → NOVA HIPÓTESE
-\`\`\`
+\`\`\`mermaid
+graph TD
+    A[CONSTRUIR] -->|Produto| B[MEDIR]
+    B -->|Dados| C[APRENDER]
+    C -->|Ideias| A
+    
+    style A fill:#000,color:#fff
+    style B fill:#333,color:#fff
+    style C fill:#666,color:#fff
+\`\`\`\`\`
 
 ### 2. MVPs de Design
 
@@ -719,9 +754,16 @@ Lean UX adapts Lean Startup principles to experience design, focusing on **valid
 
 The continuous loop that guides everything:
 
-\`\`\`
-HYPOTHESIS → EXPERIMENT → DATA → LEARNING → NEW HYPOTHESIS
-\`\`\`
+\`\`\`mermaid
+graph TD
+    A[BUILD] -->|Product| B[MEASURE]
+    B -->|Data| C[LEARN]
+    C -->|Ideas| A
+    
+    style A fill:#000,color:#fff
+    style B fill:#333,color:#fff
+    style C fill:#666,color:#fff
+\`\`\`\`\`
 
 ### 2. Design MVPs
 
@@ -795,7 +837,7 @@ Lean UX is fundamentally **human**. AI can accelerate parts of the process, but:
   },
   {
     id: 'double-diamond',
-    slug: 'methodologies/double-diamond',
+    slug: 'double-diamond',
     category: 'methodologies',
     order: 5,
     readingTime: 7,

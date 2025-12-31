@@ -36,6 +36,23 @@ Design Anti-AI não é anti-tecnologia. É anti-mediocridade.
 4. **Geometria Honesta**: Cantos retos quando faz sentido, não \`rounded-full\` em tudo
 5. **Detalhes que Importam**: Micro-interações pensadas, não animações de template
 
+### Human vs Machine Flow
+
+\`\`\`mermaid
+graph TD
+    A[Início] --> B{Abordagem}
+    B -- IA Genérica --> C[Cantos Arredondados]
+    C --> D[Gradientes Suaves]
+    D --> E[Experiência Esquecível]
+    
+    B -- Anti-IA --> F[Bordas Vivas]
+    F --> G[Texturas Cruas]
+    G --> H[Impacto Memorável]
+    
+    style E fill:#333,stroke:#f00,stroke-width:2px,color:#fff
+    style H fill:#000,stroke:#0f0,stroke-width:2px,color:#fff
+\`\`\`
+
 ## Por que isso importa?
 
 Quando todas as interfaces parecem iguais, perdemos a capacidade de criar experiências memoráveis. Usuários não se conectam com produtos genéricos.
@@ -80,6 +97,23 @@ It's about using AI as a tool, not a crutch. It's about making **intentional** c
 3. **Intentional Colors**: Limited palette with purpose, not random gradients
 4. **Honest Geometry**: Square corners when it makes sense, not \`rounded-full\` on everything
 5. **Details that Matter**: Thoughtful micro-interactions, not template animations
+
+### Human vs Machine Flow
+
+\`\`\`mermaid
+graph TD
+    A[User Start] --> B{Design Approach}
+    B -- Generic AI --> C[Rounded Corners]
+    C --> D[Soft Gradients]
+    D --> E[Forgettable Experience]
+    
+    B -- Anti-AI --> F[Sharp Edges]
+    F --> G[Raw Textures]
+    G --> H[Memorable Impact]
+    
+    style E fill:#333,stroke:#f00,stroke-width:2px,color:#fff
+    style H fill:#000,stroke:#0f0,stroke-width:2px,color:#fff
+\`\`\`
 
 ## Why does this matter?
 

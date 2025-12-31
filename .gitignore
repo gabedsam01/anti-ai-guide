@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+Relatórios
+Relatórios
+codex.md
+melhorias-com-mcp.md
+humanizacao-code.md
 
 # Editor directories and files
 .vscode/*

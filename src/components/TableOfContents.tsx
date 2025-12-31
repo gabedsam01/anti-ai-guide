@@ -29,7 +29,7 @@ export function TableOfContents({ content, language }: TableOfContentsProps) {
         .toLowerCase()
         .replace(/[^\w\s-]/g, '')
         .replace(/\s+/g, '-');
-      
+
       items.push({ id, text, level });
     }
 
@@ -72,7 +72,7 @@ export function TableOfContents({ content, language }: TableOfContentsProps) {
         <ul className="space-y-2 border-l border-border">
           {headings.map((heading) => {
             const isActive = activeId === heading.id;
-            
+
             return (
               <li key={heading.id}>
                 <a
@@ -86,11 +86,11 @@ export function TableOfContents({ content, language }: TableOfContentsProps) {
                     }
                   }}
                   className={`
-                    block text-sm font-body transition-colors
+                    block text-sm font-body transition-all duration-200
                     ${heading.level === 3 ? 'pl-6' : 'pl-4'}
-                    ${isActive 
-                      ? 'text-accent border-l-2 border-accent -ml-px' 
-                      : 'text-muted-foreground hover:text-foreground'
+                    ${isActive
+                      ? 'text-accent font-semibold border-l-[3px] border-accent -ml-px bg-accent/10 py-1 rounded-r-sm'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50 py-1'
                     }
                   `}
                 >

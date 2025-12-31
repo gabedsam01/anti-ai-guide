@@ -3,7 +3,7 @@ import { Article } from '../types';
 export const ethicsAccessibilityArticles: Article[] = [
   {
     id: 'wcag-essentials',
-    slug: 'ethics-accessibility/wcag-essentials',
+    slug: 'wcag-essentials',
     category: 'ethics-accessibility',
     order: 1,
     readingTime: 12,
@@ -251,7 +251,7 @@ AI frequently ignores accessibility by default. **Always review** automatic gene
   },
   {
     id: 'inclusive-design',
-    slug: 'ethics-accessibility/inclusive-design',
+    slug: 'inclusive-design',
     category: 'ethics-accessibility',
     order: 2,
     readingTime: 10,
@@ -537,7 +537,7 @@ AI tends to optimize for the "average". Inclusive Design requires deliberate att
   },
   {
     id: 'dark-patterns',
-    slug: 'ethics-accessibility/dark-patterns',
+    slug: 'dark-patterns',
     category: 'ethics-accessibility',
     order: 3,
     readingTime: 9,
@@ -793,7 +793,7 @@ AI can be trained on patterns that work — including dark patterns. **Always qu
   },
   {
     id: 'privacy-by-design',
-    slug: 'ethics-accessibility/privacy-by-design',
+    slug: 'privacy-by-design',
     category: 'ethics-accessibility',
     order: 4,
     readingTime: 8,
@@ -1067,7 +1067,7 @@ AI loves data. The more, the better for training models. **Resist** the temptati
   },
   {
     id: 'cognitive-accessibility',
-    slug: 'ethics-accessibility/cognitive-accessibility',
+    slug: 'cognitive-accessibility',
     category: 'ethics-accessibility',
     order: 5,
     readingTime: 8,

@@ -3,7 +3,7 @@ import { Article } from '../types';
 export const trends2025Articles: Article[] = [
   {
     id: 'ai-augmented-design',
-    slug: 'trends-2025/ai-augmented-design',
+    slug: 'ai-augmented-design',
     category: 'trends-2025',
     order: 1,
     readingTime: 11,
@@ -22,6 +22,8 @@ A IA generativa transformou o landscape do design em 2024-2025. Mas a pergunta c
 
 ## O Paradoxo da IA Generativa
 
+![Infográfico Tendências 2025](/assets/infographic-trends-pt.svg)
+
 ### O Problema
 
 IA treinada em bilhões de imagens converge para a **média estética**. Resultados são tecnicamente competentes mas visualmente intercambiáveis.
@@ -33,7 +35,7 @@ Output: Gradiente roxo + Cards arredondados + Inter font
         Indistinguível de 10.000 outras landing pages
 \`\`\`
 
-### A Solução Anti-AI
+### A Solução Anti-IA
 
 Use IA como **ponto de partida**, não destino:
 
@@ -62,6 +64,18 @@ Use IA como **ponto de partida**, não destino:
 - **Claude/GPT-4**: Pair programming avançado
 
 ## Framework de Uso Responsável
+
+\`\`\`mermaid
+graph LR
+    A[Fase 1: Geração IA] -->|Opções| B[Fase 2: Curadoria Humana]
+    B -->|Selecionado| C[Fase 3: Refinamento Humano]
+    C -->|Polido| D[Design Final]
+    
+    style A fill:#333,stroke:#666
+    style B fill:#000,stroke:#fff
+    style C fill:#000,stroke:#fff
+    style D fill:#000,stroke:#fff,stroke-width:2px
+\`\`\`
 
 \`\`\`tsx
 // Exemplo: IA como acelerador, humano como curador
@@ -106,6 +120,8 @@ Generative AI transformed the design landscape in 2024-2025. But the central que
 
 ## The Generative AI Paradox
 
+![2025 Trends Infographic](/assets/infographic-trends.svg)
+
 ### The Problem
 
 AI trained on billions of images converges to the **aesthetic average**. Results are technically competent but visually interchangeable.
@@ -147,6 +163,18 @@ Use AI as a **starting point**, not destination:
 
 ## Responsible Use Framework
 
+\`\`\`mermaid
+graph LR
+    A[Phase 1: AI Generation] -->|Options| B[Phase 2: Human Curation]
+    B -->|Selected| C[Phase 3: Human Refinement]
+    C -->|Polished| D[Final Design]
+    
+    style A fill:#333,stroke:#666
+    style B fill:#000,stroke:#fff
+    style C fill:#000,stroke:#fff
+    style D fill:#000,stroke:#fff,stroke-width:2px
+\`\`\`
+
 \`\`\`tsx
 // Example: AI as accelerator, human as curator
 const designProcess = {
@@ -187,7 +215,7 @@ The best approach for 2025:
   },
   {
     id: 'spatial-computing',
-    slug: 'trends-2025/spatial-computing',
+    slug: 'spatial-computing',
     category: 'trends-2025',
     order: 2,
     readingTime: 10,
@@ -413,7 +441,7 @@ In XR, the temptation will be generic floating interfaces. Anti-AI design in spa
   },
   {
     id: 'adaptive-interfaces',
-    slug: 'trends-2025/adaptive-interfaces',
+    slug: 'adaptive-interfaces',
     category: 'trends-2025',
     order: 3,
     readingTime: 9,
@@ -667,7 +695,7 @@ Excessive personalization creates bubbles. Balance with:
   },
   {
     id: 'voice-conversational-ui',
-    slug: 'trends-2025/voice-conversational-ui',
+    slug: 'voice-conversational-ui',
     category: 'trends-2025',
     order: 4,
     readingTime: 8,
@@ -859,7 +887,7 @@ Generic voice interfaces sound the same. For distinction:
   },
   {
     id: 'sustainable-design',
-    slug: 'trends-2025/sustainable-design',
+    slug: 'sustainable-design',
     category: 'trends-2025',
     order: 5,
     readingTime: 7,

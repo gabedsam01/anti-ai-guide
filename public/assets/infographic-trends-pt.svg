@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" style="background-color: #050505; font-family: monospace;">
+    <!-- Grid Background -->
+    <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#222" stroke-width="1"/>
+        </pattern>
+    </defs>
+    <rect width="800" height="400" fill="url(#grid)"/>
+
+    <!-- Title -->
+    <text x="40" y="60" fill="#00ff00" font-size="24" font-weight="bold">/// ANALISE_CENARIO_DESIGN_2025</text>
+
+    <!-- Generic AI Side -->
+    <g transform="translate(50, 100)">
+        <rect width="300" height="250" fill="#111" stroke="#333"/>
+        <text x="20" y="40" fill="#666" font-size="20">SETOR_A: IA_GENERICA</text>
+        
+        <!-- Abstract Blob -->
+        <circle cx="150" cy="150" r="60" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="4 4"/>
+        <text x="150" y="155" fill="#444" font-size="14" text-anchor="middle">TUDO_ARREDONDADO</text>
+        
+        <text x="20" y="230" fill="#ff0000" font-size="12">[!] ALMA_NAO_ENCONTRADA</text>
+    </g>
+
+    <!-- Anti-AI Side -->
+    <g transform="translate(450, 100)">
+        <rect width="300" height="250" fill="#111" stroke="#fff" stroke-width="2"/>
+        <text x="20" y="40" fill="#fff" font-size="20">SETOR_B: ANTI_IA</text>
+
+        <!-- Sharp Shapes -->
+        <rect x="50" y="80" width="80" height="80" fill="none" stroke="#00ff00" stroke-width="2"/>
+        <polygon points="180,80 260,80 220,160" fill="none" stroke="#00ff00" stroke-width="2"/>
+        
+        <line x1="50" y1="180" x2="260" y2="180" stroke="#fff" stroke-width="2"/>
+        
+        <text x="150" y="210" fill="#fff" font-size="14" text-anchor="middle" letter-spacing="2">FRICCAO_INTENCIONAL</text>
+        
+        <text x="20" y="230" fill="#00ff00" font-size="12">[✓] TOQUE_HUMANO_DETECTADO</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="350" y1="225" x2="450" y2="225" stroke="#333" stroke-width="2" stroke-dasharray="10 5"/>
+    <rect x="380" y="210" width="40" height="30" fill="#000" stroke="#333"/>
+    <text x="400" y="230" fill="#666" font-size="10" text-anchor="middle">VS</text>
+</svg>

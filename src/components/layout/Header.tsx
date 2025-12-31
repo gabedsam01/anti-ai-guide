@@ -19,7 +19,7 @@ export function Header({ language, toggleLanguage, isDark, toggleTheme, onMenuCl
           <Menu className="w-5 h-5" />
         </Button>
 
-        <button 
+        <button
           onClick={onSearchClick}
           className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-muted border border-border text-sm text-muted-foreground font-body hover:bg-muted/80 hover:text-foreground transition-colors"
         >
@@ -28,18 +28,24 @@ export function Header({ language, toggleLanguage, isDark, toggleTheme, onMenuCl
           <kbd className="ml-4 px-1.5 py-0.5 bg-background border border-border text-xs">⌘K</kbd>
         </button>
 
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          className="md:hidden" 
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden"
           onClick={onSearchClick}
         >
           <Search className="w-5 h-5" />
         </Button>
       </div>
 
-      <div className="flex items-center gap-2">
-        <Button variant="ghost" size="icon" onClick={toggleLanguage} title={language === 'pt' ? 'Switch to English' : 'Mudar para Português'}>
+      <div className="hidden md:flex items-center gap-2">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={toggleLanguage}
+          title={language === 'pt' ? 'Switch to English' : 'Mudar para Português'}
+          className="hover:bg-muted hover:text-foreground"
+        >
           <Globe className="w-4 h-4" />
           <span className="ml-1 text-xs font-ui">{language.toUpperCase()}</span>
         </Button>
@@ -49,7 +55,7 @@ export function Header({ language, toggleLanguage, isDark, toggleTheme, onMenuCl
         </Button>
 
         <Button variant="ghost" size="icon" asChild>
-          <a href="https://github.com/lovable" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/gabedsam01/anti-ai-guide" target="_blank" rel="noopener noreferrer">
             <Github className="w-4 h-4" />
           </a>
         </Button>

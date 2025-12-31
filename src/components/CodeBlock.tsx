@@ -41,7 +41,7 @@ export function CodeBlock({ code, language = 'typescript' }: CodeBlockProps) {
       {/* Copy button */}
       <button
         onClick={handleCopy}
-        className="absolute top-2 right-2 p-2 bg-muted border border-border text-muted-foreground hover:text-foreground hover:bg-accent/10 transition-all opacity-0 group-hover:opacity-100"
+        className="absolute top-2 right-2 p-2 bg-muted border border-border text-muted-foreground hover:text-foreground hover:bg-accent/10 transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-accent"
         title="Copy code"
       >
         {copied ? (
