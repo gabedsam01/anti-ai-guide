@@ -27,3 +27,5 @@ humanizacao-code.md
 *.njsproj
 *.sln
 *.sw?
+.vscode
+.gitignore
