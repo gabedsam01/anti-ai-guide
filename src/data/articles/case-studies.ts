@@ -3,7 +3,7 @@ import { Article } from '../types';
 export const caseStudiesArticles: Article[] = [
   {
     id: 'case-stripe',
-    slug: 'case-studies/stripe-design-system',
+    slug: 'stripe-design-system',
     category: 'case-studies',
     order: 1,
     readingTime: 10,
@@ -251,7 +251,7 @@ function Badge({ children }) {
   },
   {
     id: 'case-linear',
-    slug: 'case-studies/linear-speed-obsession',
+    slug: 'linear-speed-obsession',
     category: 'case-studies',
     order: 2,
     readingTime: 9,
@@ -541,7 +541,7 @@ Linear's speed isn't a feature — it's the **entire experience**.`
   },
   {
     id: 'case-figma',
-    slug: 'case-studies/figma-collaborative-design',
+    slug: 'figma-collaborative-design',
     category: 'case-studies',
     order: 3,
     readingTime: 11,
@@ -855,7 +855,7 @@ function DesignComment({ elementId, position }) {
   },
   {
     id: 'case-notion',
-    slug: 'case-studies/notion-flexible-blocks',
+    slug: 'notion-flexible-blocks',
     category: 'case-studies',
     order: 4,
     readingTime: 10,
@@ -1239,7 +1239,7 @@ AI can generate individual blocks, but **system coherence** requires human visio
   },
   {
     id: 'case-duolingo',
-    slug: 'case-studies/duolingo-gamification',
+    slug: 'duolingo-gamification',
     category: 'case-studies',
     order: 5,
     readingTime: 9,

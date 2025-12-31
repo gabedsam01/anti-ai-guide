@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { MainLayout } from "@/components/layout/MainLayout";
 import HomePage from "@/pages/HomePage";
 import DocPage from "@/pages/DocPage";
+import GlossaryPage from "@/pages/GlossaryPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
             <Route element={<MainLayout />}>
               <Route path="/" element={<HomePage />} />
               <Route path="/docs/:category/:slug" element={<DocPage />} />
+              <Route path="/glossary" element={<GlossaryPage />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

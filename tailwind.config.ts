@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -57,16 +58,30 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Paleta Cyber-Brutal
+        neon: {
+          green: "#00ff00",
+          pink: "#ff00ff",
+          yellow: "#ffff00"
+        },
+        brutal: {
+          bg: "#050505",
+          surface: "#111111",
+          text: "#f0f0f0",
+          muted: "#444444"
+        }
       },
       fontFamily: {
         display: ['Fraunces', 'Georgia', 'serif'],
         body: ['JetBrains Mono', 'Courier New', 'monospace'],
         ui: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ["Geist Mono", "monospace"], // Adicionado para blueprints
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 1px)",
-        sm: "calc(var(--radius) - 2px)",
+        lg: "0px",
+        md: "0px",
+        sm: "0px", // ANIQUILAR RAIOS
+        DEFAULT: "0px",
       },
       keyframes: {
         "accordion-down": {
@@ -90,6 +105,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
+        "fade-in-delayed": "fade-in 0.6s ease-out 0.3s both",
         "slide-in-left": "slide-in-left 0.2s ease-out",
       },
       typography: {

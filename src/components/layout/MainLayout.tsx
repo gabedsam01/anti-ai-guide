@@ -3,7 +3,8 @@ import { Outlet } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { MobileSidebar } from './MobileSidebar';
 import { Header } from './Header';
-import { SearchModal } from '@/components/SearchModal';
+import { BrutalFooter } from './BrutalFooter';
+import { CommandMenu } from '@/components/CommandMenu';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export function MainLayout() {
@@ -28,30 +29,30 @@ export function MainLayout() {
     }
   }, [isDark]);
 
-  // Cmd+K shortcut
+  // Atalho de teclado: Ctrl/Cmd + K para abrir o CommandMenu
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
-        setSearchOpen(true);
+        setSearchOpen((open) => !open);
       }
     };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const toggleTheme = () => setIsDark(prev => !prev);
-  const openSearch = useCallback(() => setSearchOpen(true), []);
-  const closeSearch = useCallback(() => setSearchOpen(false), []);
 
   return (
-    <div className="flex min-h-screen w-full bg-background noise-texture">
+    <div className="flex min-h-screen w-full bg-background font-mono">
       <Sidebar language={language} />
-      <MobileSidebar 
-        language={language} 
-        isOpen={mobileMenuOpen} 
-        onClose={() => setMobileMenuOpen(false)} 
+      <MobileSidebar
+        language={language}
+        isOpen={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        isDark={isDark}
+        toggleTheme={toggleTheme}
+        toggleLanguage={toggleLanguage}
       />
 
       <div className="flex-1 flex flex-col min-w-0">
@@ -61,24 +62,24 @@ export function MainLayout() {
           isDark={isDark}
           toggleTheme={toggleTheme}
           onMenuClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          onSearchClick={openSearch}
+          onSearchClick={() => setSearchOpen(true)}
         />
 
-        <main className="flex-1 p-4 lg:p-10">
-          <div className="max-w-4xl mx-auto">
+        <main className="flex-1 p-4 lg:p-10 relative z-10">
+          <div className="max-w-7xl mx-auto">
             <Outlet context={{ language }} />
           </div>
         </main>
-
-        <footer className="border-t border-border p-4 text-center text-sm text-muted-foreground font-body">
-          {language === 'pt' ? 'Feito com ❤️ pela comunidade Lovable' : 'Made with ❤️ by the Lovable community'}
-        </footer>
+        <BrutalFooter />
       </div>
 
-      <SearchModal 
-        isOpen={searchOpen} 
-        onClose={closeSearch} 
-        language={language} 
+      <CommandMenu
+        open={searchOpen}
+        onOpenChange={setSearchOpen}
+        language={language}
+        toggleLanguage={toggleLanguage}
+        toggleTheme={toggleTheme}
+        isDark={isDark}
       />
     </div>
   );
