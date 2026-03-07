@@ -116,6 +116,12 @@
     font-family: var(--font-body);
   }
 
+  /* Fix for dark mode on mobile - ensures background is applied */
+  html, body {
+    min-height: 100%;
+    background-color: hsl(var(--background));
+  }
+
   /* Typography hierarchy */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);

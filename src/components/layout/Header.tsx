@@ -13,7 +13,7 @@ interface HeaderProps {
 
 export function Header({ language, toggleLanguage, isDark, toggleTheme, onMenuClick, onSearchClick }: HeaderProps) {
   return (
-    <header className="h-14 border-b border-border bg-background/95 backdrop-blur sticky top-0 z-50 flex items-center justify-between px-4 lg:px-6">
+    <header className="h-14 border-b border-border bg-background/95 backdrop-blur sticky top-0 z-40 flex items-center justify-between px-4 lg:px-6">
       <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" className="lg:hidden" onClick={onMenuClick}>
           <Menu className="w-5 h-5" />
