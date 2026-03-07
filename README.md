@@ -13,6 +13,25 @@
 
 ---
 
+## 🌐 Public URLs
+
+| Resource | URL |
+|----------|-----|
+| **Site** | https://anti-ai-guide.vercel.app/ |
+| **Sitemap** | https://anti-ai-guide.vercel.app/sitemap.xml |
+| **Robots.txt** | https://anti-ai-guide.vercel.app/robots.txt |
+| **Repository** | https://github.com/gabedsam01/anti-ai-guide |
+
+### SEO & Discovery
+
+Este site possui **sitemap.xml** e **robots.txt** configurados para facilitar o crawling e indexação por buscadores (Google, Bing, DuckDuckGo) e bots de IA bem-comportados.
+
+- **Sitemap**: Contém todas as 33 páginas públicas do guia (home, glossário e 31 artigos)
+- **Robots.txt**: Permite crawling total do conteúdo público
+- **Canonical URLs**: Todas as páginas apontam para o domínio de produção `https://anti-ai-guide.vercel.app`
+
+---
+
 ## 💀 O Problema (e por que você deveria se importar)
 
 Pare por um segundo e navegue pela web. Olhe a quantidade de sites que parecem "clones": mesmos gradientes, mesmas animações smooth, mesmo layout de 3 colunas, mesma copy de "Transform your business with...". 

@@ -6,23 +6,25 @@ interface SEOHeadProps {
   path?: string;
 }
 
+const PRODUCTION_DOMAIN = 'https://anti-ai-guide.vercel.app';
+
 export function SEOHead({ title, description, path = '' }: SEOHeadProps) {
   const siteTitle = 'Anti-AI Guide';
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
-  const canonicalUrl = `https://anti-ai.guide${path}`;
+  const canonicalUrl = `${PRODUCTION_DOMAIN}${path}`;
 
   return (
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
-      
+
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonicalUrl} />
-      
+
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />

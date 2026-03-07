@@ -1,142 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemapschemas.org/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
   <url>
-    <loc>https://anti-ai.guide/</loc>
+    <loc>https://anti-ai-guide.vercel.app/</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Glossary Page -->
   <url>
-    <loc>https://anti-ai.guide/docs/manifesto/what-is-anti-ai-design</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://anti-ai-guide.vercel.app/glossary</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Manifesto Category -->
   <url>
-    <loc>https://anti-ai.guide/docs/ui-foundations/visual-hierarchy</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/manifesto/what-is-anti-ai-design</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ui-foundations/color-theory</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/manifesto/ui-vs-ux-clarity</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- UI Foundations Category -->
+  <url>
+    <loc>https://anti-ai-guide.vercel.app/docs/ui-foundations/consistency-principle</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ui-foundations/typography</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ui-foundations/feedback-principle</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ux-foundations/mental-models</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ui-foundations/affordance-principle</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- UX Foundations Category -->
+  <url>
+    <loc>https://anti-ai-guide.vercel.app/docs/ux-foundations/ux-honeycomb</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ux-foundations/affordances</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ux-foundations/fitts-law</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ux-foundations/user-research</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ux-foundations/hicks-law</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/methodologies/design-systems</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ux-foundations/serial-position-effect</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/methodologies/atomic-design</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ux-foundations/jakobs-law</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/methodologies/design-thinking</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ux-foundations/cognitive-load</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Methodologies Category -->
+  <url>
+    <loc>https://anti-ai-guide.vercel.app/docs/methodologies/design-systems</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/methodologies/lean-ux</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/methodologies/atomic-design</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/methodologies/double-diamond</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/methodologies/design-thinking</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/trends-2025/ai-augmented</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/methodologies/lean-ux</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/trends-2025/spatial-computing</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/methodologies/double-diamond</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trends 2025 Category -->
+  <url>
+    <loc>https://anti-ai-guide.vercel.app/docs/trends-2025/ai-augmented-design</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/trends-2025/adaptive-interfaces</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/trends-2025/spatial-computing</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/trends-2025/voice-ui</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/trends-2025/adaptive-interfaces</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/trends-2025/sustainable-design</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/trends-2025/voice-conversational-ui</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ethics-accessibility/wcag</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/trends-2025/sustainable-design</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Ethics & Accessibility Category -->
+  <url>
+    <loc>https://anti-ai-guide.vercel.app/docs/ethics-accessibility/wcag-essentials</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ethics-accessibility/inclusive-design</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ethics-accessibility/inclusive-design</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ethics-accessibility/dark-patterns</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ethics-accessibility/dark-patterns</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ethics-accessibility/privacy-by-design</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ethics-accessibility/privacy-by-design</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/ethics-accessibility/cognitive-accessibility</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/ethics-accessibility/cognitive-accessibility</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Case Studies Category -->
+  <url>
+    <loc>https://anti-ai-guide.vercel.app/docs/case-studies/stripe-design-system</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/case-studies/stripe</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/case-studies/linear-speed-obsession</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/case-studies/linear</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/case-studies/figma-collaborative-design</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/case-studies/figma</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/case-studies/notion-flexible-blocks</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anti-ai.guide/docs/case-studies/notion</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://anti-ai.guide/docs/case-studies/duolingo</loc>
+    <loc>https://anti-ai-guide.vercel.app/docs/case-studies/duolingo-gamification</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
